@@ -1,0 +1,58 @@
+Übergaben von Variablen am Beispiel der Variablen "bevorzugten Seite"
+
+Ziel ist es, die bevorzugte Seite an das Variablenfeld PosItems zu übergeben. Die beforzugte Seite entsteht in SetBuoyPosition und wird im MasterVC benötigt.
+Im Weiteren wird beschrieben, wie die bevorzugte Seite an den SetBuoyPositionController übergeben und dort angezeigt und verändert werden kann.
+
+1.
+Der Wert entsteht in SetBuoyPositionViewController.m durch Anklicken des Switch. Damit wird die Anzeige self.preferredSideText.text = @"StartBuoy"; mit StartBuoy gefüllt.
+Benötigt wird dazu das Textfeld:
+@property (strong, nonatomic) IBOutlet UITextField *preferredSideText; dass mit dem String gefüllt und im Controller angezeigt wird.
+Beim Verlassen durch doneButtonPressed wird eine Hilfsvariable *newText3 gefüllt.
+NSString *newText3 = self.preferredSideText.text;
+
+Der Wert wird über eine Methode an den Master-View-Controller übergeben
+    [self.parentVC longBuoyDidChange:newText1 latiBuoyDidChange:newText2 prefSideDidChange:newText3];
+
+Dazu steht in der SetBuoyPositionDidChangeProtocol.h eine Anweisung:
+
+- (void)longBuoyDidChange:(NSString *)newLongitude latiBuoyDidChange:(NSString *)newLatitude prefSideDidChange:(NSString *)newPreferredSide;
+
+In der MasterViewController.m steht die selbe Anweisung
+- (void)longBuoyDidChange:(NSString *)newLongitude latiBuoyDidChange:(NSString *)newLatitude prefSideDidChange:(NSString *)newPreferredSide; , die der Wert zurück gibt:
+posItems.preferredSide = newPreferredSide;
+
+Die machstehende Anweisung schließt den SetBuoyPositionViewController.m durch
+    [self.navigationController popViewControllerAnimated:YES];
+Damit steht in posItems.preferredSide die bevorzugte Seite.
+
+2. Um die bevorzugte Seite zu ändern, sollte aus posItems.preferredSide die bevorzugte Seite bei Aufruf des SetBuoyPositionViewController.m übergeben werden. PosItems.preferredSide kann dort nich einfach aufgerufen werden. Die Übergabe erfolgt in folgender Weise:
+
+Durch Drücken von -(IBAction)buttonSetBuoyPositionPressed:(id)sender öffnet sich der SetBuoyPositionViewController.m
+
+Dabei wird vorher im MasterView der Segue mit seinem Identifier aufrufen:
+[self performSegueWithIdentifier:@"segueSetBuoyPosition" sender:self];
+
+
+
+In der Anweisung - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender gibt es eine Section für diesen Seque.
+([segue.identifier isEqualToString:@"segueSetBuoyPosition"])
+Dort wird eine Instanz von SetBuoyPositionViewController erstellt:
+SetBuoyPositionViewController *editController = segue.destinationViewController;
+
+Diese Instanz kennt die Variable contentprefferedSide, die in der SetBuoyPositionViewController.d veröffentlicht ist: @property (strong, nonatomic) NSString *contentprefferedSide;
+
+Dieser Variablen wird die bevorzugte Seite übergeben:
+editController.contentprefferedSide = posItems.preferredSide;
+
+dann übergibt der Controller sich selbst als Referenz an die zu öffnende Szene:
+editController.parentVC = self;
+Hier kann jetzt die bevorzugte Seite angezeigt werden:  self.preferredSideText.text = self.contentprefferedSide;
+
+
+
+
+
+
+
+
+

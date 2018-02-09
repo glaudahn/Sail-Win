@@ -1,0 +1,28 @@
+
+
+ist das nötig?
+
+in MasterViewController und in SetCountdownViewController:
+NSLocale *german = [[NSLocale alloc] initWithLocaleIdentifier:@"de_DE"];    // Zeitzone auf deutsch setzen.
+[dateFormatter setLocale:german];
+[dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT+1"]];
+
+
+idleTimerDisabled = YES
+
+//-(void)timerCountDownStart
+//{
+//    ///Hier wird der TimerCountDown gestartet durch Start drücken
+//    if ([countdownTimer isValid])
+//    {
+//    NSLog(@"nichts passiert");
+//    }
+//    else
+//    {
+//        countNumber = 10;
+//        countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerCountDownMethode) userInfo:nil repeats:YES];
+//        [countdownTimer fire];
+//    }
+//}
+
+Gradzahl wird nicht übergeben

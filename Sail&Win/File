@@ -1,0 +1,103 @@
+letzte Änderung am 27.10.2015
+ //letzte Änderung
+
+Start
+klick auf den Button Map löst aus
+Methode: [self performSegueWithIdentifier:@"firstNameEditSegue" sender:self];
+es wird der Übergang zur Szene veranlasst, die den Segue firstNameEditSegue hat
+beim Übergang wird die Methode - (void)prepareForSegue:(UIStoryboardSegue *) segue sender:(id)sender aufgerufen
+diese kann man sich zu Nutze machen, weil man hier Zugriff auf den absendenden und auf den zu öffnenden VC hat
+Zielcontroller *editController vom Typ FirstNameEditViewController erstellen:
+FirstNameEditViewController *editController = segue.destinationViewController;
+dem Zielcontroller den person.firstname mitgeben:
+editController.content = person.firstName;  (Max in den content)
+im ZielVC.h muß die Property content vorhanden sein:
+@property (strong, nonatomic) NSString *content;
+im aufgerufenen VC steht jetzt Max
+der aufgerufene VC hat selbst keine Beziehung zum ElternVC und kann keine Daten zurück geben
+deshalb eine zusätzliche Property im aufgerufenen VC.h
+@property (weak, nonatomic) PersonDetailViewController *parentVC; eine Instanz von PersonDetailViewController zu Verfügung zu stellen
+damit kann auf die öffentlichen Eigenschaften und Methoden vom PersonDetailViewController zugegriffen werden
+ändern des Namens  in Maxi
+mit Button zurück Methode aufrufen, in der ein neuer String *egal erstellt wird
+mit [self.parentVC NameDidChange:egal]; die Methode NameDidChange im QuellVC rufen
+dazu muß die Methode im QuellVC.h vorhanden sein
+in der Methode egal an egalMethode übergeben
+showPerson, um Werte anzuzeigen
+popViewController rufen, um alten ZielVC vom Stapel zu entfernen und Speicherplatz freizugeben
+
+Wie wird die Map gemalt?
+- In DrawingView.m existiert die Funktion -(void)drawRect:(CGRect)rect, diese Funktion wird automatisch aufgerufen, wenn neu gezeichnet werden soll. In dieser Funktion werden die Vorbereitungen für das Zeichnen eingestellt. Dann wird das Startschiff, die Boje, die Startlinie und das Segelboot gezeichnet.
+Variablenvereinbarung:
+    lokal wird die Konvention //drawX_Sailer// verwendet, draw- für in DrawingView lokal benutzt, X- Latitude, Y-Longitude, _Sailer- Segelboot, _Buoy- Boje und _Ship- Startschiff
+    übergreifend wird die Konvention //X_Sailer// verwendet, Diese Variablen werden gefüllt durch die Funktion
+        -(void)update:(int)X_Ship update:(int)Y_Ship update:(int)X_Buoy update:(int)Y_Buoy update:(int)X_Sailer update:(int)Y_Sailer, die in DrawingView.m steht
+Der Variablensatz //X_Sailer// wird im  MasterViewController.m in der Funktion -(void) transformLocation erzeugt und durch den Aufruf [drawingView update:X_Ship update:Y_Ship update:X_Buoy update:Y_Buoy update:X_Sailer update:Y_Sailer];im  MasterViewController.m  an drawingView.m an die Funktion -(void)update:... übergeben.
+
+[MasterViewController.m]                                                [DrawingView.m]
+[- (void) transformLocation]                                            drawX_Ship = X_Ship;
+    float X_Ship = 0;                                                   drawY_Ship = Y_Ship;
+    float Y_Ship = 0;                                                   drawX_Buoy = X_Buoy
+    float X_Buoy = 0;   [drawingView update:..] -->> [- (void)update:]  drawY_Buoy = Y_Buoy
+    float Y_Buoy = 0;                                                   drawX_Sailer = X_Sailer
+    float X_Sailer = 0;                                                 drawY_Sailer = Y_Sailer
+    float Y_Sailer = 0;
+
+
+// iPhone 4S        screenHeight=480 ,screenWidth=320
+// iPhone 5/5s      screenHeight=568 ,screenWidth=320
+// iPhone 6/6s      screenHeight=667 ,screenWidth=375
+// iPhone 6/6s Plus screenHeight=736 ,screenWidth=414
+
+
+Abstände berechnen (Quelle: http://www.kompf.de/gps/distcalc.html):
+Quelldatei: Geo Daten Berechnung/ KN Berechnung neu vom 22.02.2016.numbers
+Formel zur Berechnung des Abstandes zwischen zwei GPS Werten P1 und P2:
+P1(lon1,lat1)  P2(lon2,lat2)
+lon und lat müssen in Bogenmaß angegeben werden, -> ( * Pi / 180 )
+dist wird in Meter errechnet
+
+dist = 1000 * 6378.388 * acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(lon2 - lon1))
+Beispiel1:
+    Bezeichnung         GPS in °     im Bogenmass     Abstand der beiden Punkte in m
+Lon1 / Länge 1 /  X:  8,41321000      0,14683822        1593,42 m
+Lat1 / Breite 1 / Y: 49,99170000      0,87251976
+Lon2 / Länge 2 /  X:  8,42182000      0,14698849
+Lat2 / Breite 2 / Y: 50,00490000      0,87275015
+
+Beispiel2:  0,000008975 ist 1 m am Äquator  0,00001468 ist 1 m  in Berlin
+Bezeichnung             GPS in °          im Bogenmass     Abstand der beiden Punkte in m
+Lon1 / Länge 1 /  X:  0,00000897500      0,0000001566433        1 m
+Lat1 / Breite 1 / Y:  0                  0
+Lon2 / Länge 2 /  X:  0                  0
+Lat2 / Breite 2 / Y:  0                  0
+
+SetShip  tag = 1
+SetBoy   tag = 2
+Button Start = 3
+SetCount tag = 4
+Button Time Estimate = 5
+Label Time Estimate = 8
+drawing View tag = 6
+Button Time Remain = 7
+Button Distance to Target = 9
+Label Distance to Target = 10
+
+
+
+
+#define LogPretty NSLog(@"%s %d %s", __FILE__, __LINE__, __PRETTY_FUNCTION__);
+
+
+po wert1
+
+//[self.buttonStartCount setTitle:@"Start" forState:UIControlStateNormal];
+
+//[self displayvalue:(UIButton*)sender];
+
+//-(void)displayvalue:(id)sender
+//{
+//    UIButton *button = (UIButton*)sender;
+//    NSLog(@"The button title is %@ ", button.titleLabel.text);
+//        NSLog(@"The button title is %@ ", [sender currentTitle]);
+//}

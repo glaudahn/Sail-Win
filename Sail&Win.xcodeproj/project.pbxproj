@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C628BA1E321A7500983778 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45C40121936E5D20022B236 /* MasterViewController.m */; };
+		F4476DA71C8C723A00DB04CC /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = F4476DA61C8C723A00DB04CC /* red.png */; };
+		F4476DA91C8C72C300DB04CC /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = F4476DA81C8C72C300DB04CC /* green.png */; };
+		F4489D4C1938E4D700CAD6E5 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489D4B1938E4D700CAD6E5 /* HelpViewController.m */; };
+		F4489D521938F39E00CAD6E5 /* SetBuoyPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489D511938F39E00CAD6E5 /* SetBuoyPositionViewController.m */; };
+		F4489D551938F3F300CAD6E5 /* SetCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489D541938F3F300CAD6E5 /* SetCountdownViewController.m */; };
+		F4489D581938F44D00CAD6E5 /* TimeRemainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489D571938F44D00CAD6E5 /* TimeRemainViewController.m */; };
+		F4489D5B1938F52F00CAD6E5 /* TimeEstimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489D5A1938F52F00CAD6E5 /* TimeEstimateViewController.m */; };
+		F4489D5E1938F57100CAD6E5 /* SpeedToTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489D5D1938F57100CAD6E5 /* SpeedToTargetViewController.m */; };
+		F4489D611938F5F000CAD6E5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4489D601938F5F000CAD6E5 /* MapViewController.m */; };
+		F44A6616193BB90D004C6C70 /* File in Resources */ = {isa = PBXBuildFile; fileRef = F44A6615193BB90D004C6C70 /* File */; };
+		F44BB2F71938F7D60053DDBA /* SetShipPositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44BB2F61938F7D60053DDBA /* SetShipPositionViewController.m */; };
+		F44BB2FA1938FE8A0053DDBA /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44BB2F91938FE8A0053DDBA /* StartViewController.m */; };
+		F44CBED51945DB2400DBFF31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4386F11193B4B1A00FE7112 /* CoreLocation.framework */; };
+		F45C3FFD1936E5D20022B236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45C3FFC1936E5D20022B236 /* Foundation.framework */; };
+		F45C3FFF1936E5D20022B236 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45C3FFE1936E5D20022B236 /* CoreGraphics.framework */; };
+		F45C40011936E5D20022B236 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45C40001936E5D20022B236 /* UIKit.framework */; };
+		F45C40071936E5D20022B236 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45C40051936E5D20022B236 /* InfoPlist.strings */; };
+		F45C40091936E5D20022B236 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45C40081936E5D20022B236 /* main.m */; };
+		F45C400D1936E5D20022B236 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45C400C1936E5D20022B236 /* AppDelegate.m */; };
+		F45C40101936E5D20022B236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45C400E1936E5D20022B236 /* Main.storyboard */; };
+		F45C40151936E5D20022B236 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45C40141936E5D20022B236 /* Images.xcassets */; };
+		F45C401C1936E5D20022B236 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45C401B1936E5D20022B236 /* XCTest.framework */; };
+		F45C401D1936E5D20022B236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45C3FFC1936E5D20022B236 /* Foundation.framework */; };
+		F45C401E1936E5D20022B236 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45C40001936E5D20022B236 /* UIKit.framework */; };
+		F45C40261936E5D20022B236 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F45C40241936E5D20022B236 /* InfoPlist.strings */; };
+		F45C40281936E5D20022B236 /* Sail_WinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45C40271936E5D20022B236 /* Sail_WinTests.m */; };
+		F45C40351936E6060022B236 /* Button Xcode.png in Resources */ = {isa = PBXBuildFile; fileRef = F45C40311936E6060022B236 /* Button Xcode.png */; };
+		F46641071AEFAF7A008229A1 /* SpeedCalibrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46641061AEFAF7A008229A1 /* SpeedCalibrationViewController.m */; };
+		F48F3874193F7A6F00C5F709 /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F48F3873193F7A6F00C5F709 /* DrawingView.m */; };
+		F4B344B4193A116700D1D1C1 /* PosItems.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B344B3193A116700D1D1C1 /* PosItems.m */; };
+		F4F15CBA1ADAB89800979A3F /* Zeitablauf.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F4F15CB91ADAB89800979A3F /* Zeitablauf.rtf */; };
+		F4F15CBE1ADABE8C00979A3F /* Offene Punkte in Resources */ = {isa = PBXBuildFile; fileRef = F4F15CBD1ADABE8C00979A3F /* Offene Punkte */; };
+		F4F218F91AEBAA13004657DD /* Übergabe Variable in Resources */ = {isa = PBXBuildFile; fileRef = F4F218F81AEBAA13004657DD /* Übergabe Variable */; };
+		F4FBF8671ADEF846009754DA /* AccuracyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FBF8661ADEF846009754DA /* AccuracyViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F45C401F1936E5D20022B236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F45C3FF11936E5D20022B236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F45C3FF81936E5D20022B236;
+			remoteInfo = "Sail&Win";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F42457651948E87A00962BCB /* SetCountdownDidChangeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCountdownDidChangeProtocol.h; sourceTree = "<group>"; };
+		F43762A31AF0047900AD6FCC /* SpeedCalibrationDidChangeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedCalibrationDidChangeProtocol.h; sourceTree = "<group>"; };
+		F4386F11193B4B1A00FE7112 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F4386F13193B4B2900FE7112 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F44193951F12065D00E7C37A /* Sail-and-Win-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sail-and-Win-Logo.png"; path = "../Sail-and-Win-Logo.png"; sourceTree = "<group>"; };
+		F4476DA61C8C723A00DB04CC /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		F4476DA81C8C72C300DB04CC /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = ../green.png; sourceTree = "<group>"; };
+		F4489D4A1938E4D700CAD6E5 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		F4489D4B1938E4D700CAD6E5 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		F4489D501938F39E00CAD6E5 /* SetBuoyPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetBuoyPositionViewController.h; sourceTree = "<group>"; };
+		F4489D511938F39E00CAD6E5 /* SetBuoyPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetBuoyPositionViewController.m; sourceTree = "<group>"; };
+		F4489D531938F3F300CAD6E5 /* SetCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetCountdownViewController.h; sourceTree = "<group>"; };
+		F4489D541938F3F300CAD6E5 /* SetCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetCountdownViewController.m; sourceTree = "<group>"; };
+		F4489D561938F44D00CAD6E5 /* TimeRemainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeRemainViewController.h; sourceTree = "<group>"; };
+		F4489D571938F44D00CAD6E5 /* TimeRemainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeRemainViewController.m; sourceTree = "<group>"; };
+		F4489D591938F52F00CAD6E5 /* TimeEstimateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeEstimateViewController.h; sourceTree = "<group>"; };
+		F4489D5A1938F52F00CAD6E5 /* TimeEstimateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeEstimateViewController.m; sourceTree = "<group>"; };
+		F4489D5C1938F57100CAD6E5 /* SpeedToTargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedToTargetViewController.h; sourceTree = "<group>"; };
+		F4489D5D1938F57100CAD6E5 /* SpeedToTargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedToTargetViewController.m; sourceTree = "<group>"; };
+		F4489D5F1938F5F000CAD6E5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F4489D601938F5F000CAD6E5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F44A6615193BB90D004C6C70 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		F44BB2F51938F7D60053DDBA /* SetShipPositionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetShipPositionViewController.h; sourceTree = "<group>"; };
+		F44BB2F61938F7D60053DDBA /* SetShipPositionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetShipPositionViewController.m; sourceTree = "<group>"; };
+		F44BB2F81938FE8A0053DDBA /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		F44BB2F91938FE8A0053DDBA /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		F45C3FF91936E5D20022B236 /* Sail&Win.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sail&Win.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45C3FFC1936E5D20022B236 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F45C3FFE1936E5D20022B236 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F45C40001936E5D20022B236 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F45C40041936E5D20022B236 /* Sail&Win-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sail&Win-Info.plist"; sourceTree = "<group>"; };
+		F45C40061936E5D20022B236 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F45C40081936E5D20022B236 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F45C400A1936E5D20022B236 /* Sail&Win-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sail&Win-Prefix.pch"; sourceTree = "<group>"; };
+		F45C400B1936E5D20022B236 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F45C400C1936E5D20022B236 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F45C400F1936E5D20022B236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F45C40111936E5D20022B236 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		F45C40121936E5D20022B236 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		F45C40141936E5D20022B236 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F45C401A1936E5D20022B236 /* Sail&WinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sail&WinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45C401B1936E5D20022B236 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F45C40231936E5D20022B236 /* Sail&WinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sail&WinTests-Info.plist"; sourceTree = "<group>"; };
+		F45C40251936E5D20022B236 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F45C40271936E5D20022B236 /* Sail_WinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sail_WinTests.m; sourceTree = "<group>"; };
+		F45C40311936E6060022B236 /* Button Xcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button Xcode.png"; sourceTree = "<group>"; };
+		F46641051AEFAF7A008229A1 /* SpeedCalibrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedCalibrationViewController.h; sourceTree = "<group>"; };
+		F46641061AEFAF7A008229A1 /* SpeedCalibrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedCalibrationViewController.m; sourceTree = "<group>"; };
+		F48F3872193F7A6F00C5F709 /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
+		F48F3873193F7A6F00C5F709 /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
+		F4B344B2193A116700D1D1C1 /* PosItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosItems.h; sourceTree = "<group>"; };
+		F4B344B3193A116700D1D1C1 /* PosItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosItems.m; sourceTree = "<group>"; };
+		F4BB4A69193ED74100871976 /* SetShipPositionDidChangeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetShipPositionDidChangeProtocol.h; sourceTree = "<group>"; };
+		F4F15CB91ADAB89800979A3F /* Zeitablauf.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Zeitablauf.rtf; sourceTree = "<group>"; };
+		F4F15CBD1ADABE8C00979A3F /* Offene Punkte */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Offene Punkte"; sourceTree = "<group>"; };
+		F4F218F81AEBAA13004657DD /* Übergabe Variable */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Übergabe Variable"; sourceTree = "<group>"; };
+		F4F446B0193EDA2D0068CA9C /* SetBuoyPositionDidChangeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetBuoyPositionDidChangeProtocol.h; sourceTree = "<group>"; };
+		F4FBF8651ADEF846009754DA /* AccuracyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccuracyViewController.h; sourceTree = "<group>"; };
+		F4FBF8661ADEF846009754DA /* AccuracyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccuracyViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F45C3FF61936E5D20022B236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44CBED51945DB2400DBFF31 /* CoreLocation.framework in Frameworks */,
+				F45C3FFF1936E5D20022B236 /* CoreGraphics.framework in Frameworks */,
+				F45C40011936E5D20022B236 /* UIKit.framework in Frameworks */,
+				F45C3FFD1936E5D20022B236 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45C40171936E5D20022B236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45C401C1936E5D20022B236 /* XCTest.framework in Frameworks */,
+				F45C401E1936E5D20022B236 /* UIKit.framework in Frameworks */,
+				F45C401D1936E5D20022B236 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F45C3FF01936E5D20022B236 = {
+			isa = PBXGroup;
+			children = (
+				F45C40021936E5D20022B236 /* Sail&Win */,
+				F45C40211936E5D20022B236 /* Sail&WinTests */,
+				F45C3FFB1936E5D20022B236 /* Frameworks */,
+				F45C3FFA1936E5D20022B236 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F45C3FFA1936E5D20022B236 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F45C3FF91936E5D20022B236 /* Sail&Win.app */,
+				F45C401A1936E5D20022B236 /* Sail&WinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F45C3FFB1936E5D20022B236 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4386F13193B4B2900FE7112 /* MapKit.framework */,
+				F4386F11193B4B1A00FE7112 /* CoreLocation.framework */,
+				F45C3FFC1936E5D20022B236 /* Foundation.framework */,
+				F45C3FFE1936E5D20022B236 /* CoreGraphics.framework */,
+				F45C40001936E5D20022B236 /* UIKit.framework */,
+				F45C401B1936E5D20022B236 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F45C40021936E5D20022B236 /* Sail&Win */ = {
+			isa = PBXGroup;
+			children = (
+				F4F218F81AEBAA13004657DD /* Übergabe Variable */,
+				F44A6615193BB90D004C6C70 /* File */,
+				F4F15CBD1ADABE8C00979A3F /* Offene Punkte */,
+				F4F15CB91ADAB89800979A3F /* Zeitablauf.rtf */,
+				F45C400B1936E5D20022B236 /* AppDelegate.h */,
+				F45C400C1936E5D20022B236 /* AppDelegate.m */,
+				F4B344B2193A116700D1D1C1 /* PosItems.h */,
+				F4B344B3193A116700D1D1C1 /* PosItems.m */,
+				F48F3872193F7A6F00C5F709 /* DrawingView.h */,
+				F48F3873193F7A6F00C5F709 /* DrawingView.m */,
+				F45C400E1936E5D20022B236 /* Main.storyboard */,
+				F4FBF8651ADEF846009754DA /* AccuracyViewController.h */,
+				F4FBF8661ADEF846009754DA /* AccuracyViewController.m */,
+				F45C40111936E5D20022B236 /* MasterViewController.h */,
+				F45C40121936E5D20022B236 /* MasterViewController.m */,
+				F4489D4A1938E4D700CAD6E5 /* HelpViewController.h */,
+				F4489D4B1938E4D700CAD6E5 /* HelpViewController.m */,
+				F44BB2F61938F7D60053DDBA /* SetShipPositionViewController.m */,
+				F44BB2F51938F7D60053DDBA /* SetShipPositionViewController.h */,
+				F4BB4A69193ED74100871976 /* SetShipPositionDidChangeProtocol.h */,
+				F4489D501938F39E00CAD6E5 /* SetBuoyPositionViewController.h */,
+				F4489D511938F39E00CAD6E5 /* SetBuoyPositionViewController.m */,
+				F4F446B0193EDA2D0068CA9C /* SetBuoyPositionDidChangeProtocol.h */,
+				F4489D531938F3F300CAD6E5 /* SetCountdownViewController.h */,
+				F4489D541938F3F300CAD6E5 /* SetCountdownViewController.m */,
+				F42457651948E87A00962BCB /* SetCountdownDidChangeProtocol.h */,
+				F46641051AEFAF7A008229A1 /* SpeedCalibrationViewController.h */,
+				F46641061AEFAF7A008229A1 /* SpeedCalibrationViewController.m */,
+				F43762A31AF0047900AD6FCC /* SpeedCalibrationDidChangeProtocol.h */,
+				F4489D561938F44D00CAD6E5 /* TimeRemainViewController.h */,
+				F4489D571938F44D00CAD6E5 /* TimeRemainViewController.m */,
+				F4489D591938F52F00CAD6E5 /* TimeEstimateViewController.h */,
+				F4489D5A1938F52F00CAD6E5 /* TimeEstimateViewController.m */,
+				F4489D5D1938F57100CAD6E5 /* SpeedToTargetViewController.m */,
+				F4489D5C1938F57100CAD6E5 /* SpeedToTargetViewController.h */,
+				F4489D5F1938F5F000CAD6E5 /* MapViewController.h */,
+				F4489D601938F5F000CAD6E5 /* MapViewController.m */,
+				F44BB2F81938FE8A0053DDBA /* StartViewController.h */,
+				F44BB2F91938FE8A0053DDBA /* StartViewController.m */,
+				F45C40031936E5D20022B236 /* Supporting Files */,
+			);
+			path = "Sail&Win";
+			sourceTree = "<group>";
+		};
+		F45C40031936E5D20022B236 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45C40141936E5D20022B236 /* Images.xcassets */,
+				F44193951F12065D00E7C37A /* Sail-and-Win-Logo.png */,
+				F45C40311936E6060022B236 /* Button Xcode.png */,
+				F4476DA81C8C72C300DB04CC /* green.png */,
+				F4476DA61C8C723A00DB04CC /* red.png */,
+				F45C40041936E5D20022B236 /* Sail&Win-Info.plist */,
+				F45C40051936E5D20022B236 /* InfoPlist.strings */,
+				F45C40081936E5D20022B236 /* main.m */,
+				F45C400A1936E5D20022B236 /* Sail&Win-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F45C40211936E5D20022B236 /* Sail&WinTests */ = {
+			isa = PBXGroup;
+			children = (
+				F45C40271936E5D20022B236 /* Sail_WinTests.m */,
+				F45C40221936E5D20022B236 /* Supporting Files */,
+			);
+			path = "Sail&WinTests";
+			sourceTree = "<group>";
+		};
+		F45C40221936E5D20022B236 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45C40231936E5D20022B236 /* Sail&WinTests-Info.plist */,
+				F45C40241936E5D20022B236 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F45C3FF81936E5D20022B236 /* Sail&Win */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45C402B1936E5D20022B236 /* Build configuration list for PBXNativeTarget "Sail&Win" */;
+			buildPhases = (
+				F45C3FF51936E5D20022B236 /* Sources */,
+				F45C3FF61936E5D20022B236 /* Frameworks */,
+				F45C3FF71936E5D20022B236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sail&Win";
+			productName = "Sail&Win";
+			productReference = F45C3FF91936E5D20022B236 /* Sail&Win.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F45C40191936E5D20022B236 /* Sail&WinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45C402E1936E5D20022B236 /* Build configuration list for PBXNativeTarget "Sail&WinTests" */;
+			buildPhases = (
+				F45C40161936E5D20022B236 /* Sources */,
+				F45C40171936E5D20022B236 /* Frameworks */,
+				F45C40181936E5D20022B236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F45C40201936E5D20022B236 /* PBXTargetDependency */,
+			);
+			name = "Sail&WinTests";
+			productName = "Sail&WinTests";
+			productReference = F45C401A1936E5D20022B236 /* Sail&WinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F45C3FF11936E5D20022B236 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Günter Laudahn";
+				TargetAttributes = {
+					F45C3FF81936E5D20022B236 = {
+						DevelopmentTeam = 2VLY7CNB48;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					F45C40191936E5D20022B236 = {
+						TestTargetID = F45C3FF81936E5D20022B236;
+					};
+				};
+			};
+			buildConfigurationList = F45C3FF41936E5D20022B236 /* Build configuration list for PBXProject "Sail&Win" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F45C3FF01936E5D20022B236;
+			productRefGroup = F45C3FFA1936E5D20022B236 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F45C3FF81936E5D20022B236 /* Sail&Win */,
+				F45C40191936E5D20022B236 /* Sail&WinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F45C3FF71936E5D20022B236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F218F91AEBAA13004657DD /* Übergabe Variable in Resources */,
+				F4476DA91C8C72C300DB04CC /* green.png in Resources */,
+				F4F15CBE1ADABE8C00979A3F /* Offene Punkte in Resources */,
+				F45C40151936E5D20022B236 /* Images.xcassets in Resources */,
+				F4F15CBA1ADAB89800979A3F /* Zeitablauf.rtf in Resources */,
+				F45C40071936E5D20022B236 /* InfoPlist.strings in Resources */,
+				F45C40351936E6060022B236 /* Button Xcode.png in Resources */,
+				F4476DA71C8C723A00DB04CC /* red.png in Resources */,
+				F44A6616193BB90D004C6C70 /* File in Resources */,
+				F45C40101936E5D20022B236 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45C40181936E5D20022B236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45C40261936E5D20022B236 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F45C3FF51936E5D20022B236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4489D5E1938F57100CAD6E5 /* SpeedToTargetViewController.m in Sources */,
+				F45C400D1936E5D20022B236 /* AppDelegate.m in Sources */,
+				F45C40091936E5D20022B236 /* main.m in Sources */,
+				F4B344B4193A116700D1D1C1 /* PosItems.m in Sources */,
+				F4489D5B1938F52F00CAD6E5 /* TimeEstimateViewController.m in Sources */,
+				F46641071AEFAF7A008229A1 /* SpeedCalibrationViewController.m in Sources */,
+				F4489D4C1938E4D700CAD6E5 /* HelpViewController.m in Sources */,
+				F4FBF8671ADEF846009754DA /* AccuracyViewController.m in Sources */,
+				F4489D521938F39E00CAD6E5 /* SetBuoyPositionViewController.m in Sources */,
+				F4489D551938F3F300CAD6E5 /* SetCountdownViewController.m in Sources */,
+				F44BB2F71938F7D60053DDBA /* SetShipPositionViewController.m in Sources */,
+				F44BB2FA1938FE8A0053DDBA /* StartViewController.m in Sources */,
+				18C628BA1E321A7500983778 /* MasterViewController.m in Sources */,
+				F4489D581938F44D00CAD6E5 /* TimeRemainViewController.m in Sources */,
+				F4489D611938F5F000CAD6E5 /* MapViewController.m in Sources */,
+				F48F3874193F7A6F00C5F709 /* DrawingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45C40161936E5D20022B236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45C40281936E5D20022B236 /* Sail_WinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F45C40201936E5D20022B236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F45C3FF81936E5D20022B236 /* Sail&Win */;
+			targetProxy = F45C401F1936E5D20022B236 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F45C40051936E5D20022B236 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45C40061936E5D20022B236 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F45C400E1936E5D20022B236 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45C400F1936E5D20022B236 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F45C40241936E5D20022B236 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45C40251936E5D20022B236 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F45C40291936E5D20022B236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F45C402A1936E5D20022B236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F45C402C1936E5D20022B236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2VLY7CNB48;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sail&Win/Sail&Win-Prefix.pch";
+				INFOPLIST_FILE = "Sail&Win/Sail&Win-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.andlove.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F45C402D1936E5D20022B236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2VLY7CNB48;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sail&Win/Sail&Win-Prefix.pch";
+				INFOPLIST_FILE = "Sail&Win/Sail&Win-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.andlove.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F45C402F1936E5D20022B236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sail&Win.app/Sail&Win";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sail&Win/Sail&Win-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sail&WinTests/Sail&WinTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.andlove.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F45C40301936E5D20022B236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sail&Win.app/Sail&Win";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sail&Win/Sail&Win-Prefix.pch";
+				INFOPLIST_FILE = "Sail&WinTests/Sail&WinTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.andlove.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F45C3FF41936E5D20022B236 /* Build configuration list for PBXProject "Sail&Win" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45C40291936E5D20022B236 /* Debug */,
+				F45C402A1936E5D20022B236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45C402B1936E5D20022B236 /* Build configuration list for PBXNativeTarget "Sail&Win" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45C402C1936E5D20022B236 /* Debug */,
+				F45C402D1936E5D20022B236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45C402E1936E5D20022B236 /* Build configuration list for PBXNativeTarget "Sail&WinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45C402F1936E5D20022B236 /* Debug */,
+				F45C40301936E5D20022B236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F45C3FF11936E5D20022B236 /* Project object */;
+}
